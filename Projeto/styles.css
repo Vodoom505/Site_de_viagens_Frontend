@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteiner1{
+    background: url('https://images.pexels.com/photos/1483214/pexels-photo-1483214.jpeg') center/cover no-repeat;
+}
+.logo{
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+.dashboard{
+    background-color: rgba(0, 255, 98, 0.144);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 8px;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.menu a:hover{
+    color: #00b846;
+}
+.hero{
+    padding: 300px 300px;
+    text-align: center;
+    color: aliceblue;
+}
+.hero h1{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 98, 0.144);
+
+}
+.busca-form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+.campo input{
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 220px;
+}
+.busca-form button{
+    background-color: #00b846;
+    color: white;
+    padding: 11px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.busca-form button:hover{
+    background-color: #00441a;
+}
+/* ===========tela 2========================*/
+.conteiner2{
+    padding: 80px 60px;
+    background-color: white;
+}
+.passeiosConteiner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+.passeioTexto{
+    flex: 1 1 400px;
+    max-width: 550px;
+}
+.passeioTexto h2 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #00441a;
+    margin-top: 10px;
+}
+.linha{
+    width: 80px;
+    height: 4px;
+    background-color: #f8a428;
+    border-radius: 2px;
+    margin-bottom: 25px;
+}
+.passeiosConteiner p{
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+.btnSaiba{
+    background-color:  #00b846;
+    border: none;
+    padding: 12px 28px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 40px;
+}
+.btnSaiba:hover{
+    background-color: #00441a;
+}
+.passeioImagens{
+    flex: 1 1 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.passeioImagens img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+@media (max-width: 900px){
+    .passeiosConteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .passeiosImagens {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .passeiosImagens {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===========tela 3========================*/
+.destinos{
+    padding: 80px 50px;
+    background: linear-gradient(180deg, #bfd1c1 0%, #8ab38f 50%, #3f5c40 100%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.destinos h2{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #00441a;
+    margin-bottom: 40px;
+}
+.destinosGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.info {
+  padding: 15px 20px;
+  text-align: left;
+}
+.info h3 {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.info h3 span {
+  font-weight: 400;
+  color: #666;
+}
+
+.info p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.precos {
+  
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.precos strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.precos span {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+.card button {
+  background-color:  #00b846;
+  color:  white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+.card button:hover {
+  background-color: #00441a;
+}
+@media (max-width: 768px) {
+  .destinos {
+    padding: 60px 20px;
+  }
+
+  .destinos h2 {
+    font-size: 1.5rem;
+  }
+}
+/* ===========tela 4========================*/
+.avaliacoes{
+  padding: 80px 20px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+.avaliacoes h2 {
+  color: #00441a;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.avaliacoesConteiner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+.avaliacao {
+  max-width: 800px;
+  background-color: transparent;
+  padding: 0 30px;
+}
+.avaliacao .texto {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+.foto img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00441a;
+}
+.nome {
+  font-size: 1rem;
+  color: #555;
+}
+.nome strong {
+  font-weight: 600;
+  color: #333;
+  font-style: italic;
+}
+.seta {
+  background-color: #9b9b9b;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.seta:hover {
+  background-color: #494949;
+}
+.setaEsq {
+  margin-right: 10px;
+}
+.setaDir {
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .avaliacao .texto {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+}
+.foto img {
+  width: 200px;
+  height: 200px;
+}
+
+.seta {
+  font-size: 1.3rem;
+  width: 32px;
+  height: 32px;
+}
+/* ===========tela 5========================*/
+.footer {
+  background-color: #374049;
+  color: #dfe3e8;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 60px 80px 30px;
+}
+.footerConteiner {
+  display: flex;
+  justify-content:space-between;
+}
+.footerCol {
+  flex: 1 1 300px;
+}
+.logo2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00b846;
+  margin-bottom: 15px;
+  font-family: 'Lobster', cursive;
+}
+.footerCol p {
+  color: #cfd4d8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #a0a7ad;
+}
+.footerCol h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dfe3e8;
+  margin-bottom: 15px;
+}
+.footerCol ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerCol ul li {
+  margin-bottom: 8px;
+  color: #cfd4d8;
+  font-size: 0.9rem;
+}
+.NEWSLETTER {
+  display: flex;
+  margin-bottom: 15px;
+}
+.NEWSLETTER input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 0.9rem;
+}
+.NEWSLETTER button {
+  background-color: #00b846;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.NEWSLETTER button:hover {
+  background-color: #00441a;
+}
+.footerCol hr {
+  border: none;
+  border-top: 1px solid #8b939b;
+  margin: 20px 0;
+}
+.social {
+  display: flex;
+  gap: 15px;
+}
+.social a {
+  color: #dfe3e8;
+  font-size: 1.1rem;
+  border: 1px solid #dfe3e8;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.social a:hover {
+  color: #00b846;
+  border-color: #00b846;
+}
+@media (max-width: 900px) {
+  .footer {
+    padding: 40px 30px;
+  }
+  .footerContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
